@@ -1,0 +1,55 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: political query path
+  steps:
+  - intent: political_india
+  - action: utter_political_india
+
+- story: geography query path
+  steps:
+  - intent: geography_india
+  - action: utter_geography_india
+
+- story: state information query path
+  steps:
+  - intent: state_information
+  - action: utter_state_information
+
+- story: weather query path
+  steps:
+  - intent: weather_india
+  - action: utter_weather_india
+
+- story: general knowledge path
+  steps:
+  - intent: general_knowledge
+  - action: utter_general_knowledge  

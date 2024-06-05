@@ -1,0 +1,64 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - political_india
+  - geography_india
+  - state_information
+  - weather_india
+  - general_knowledge
+
+  
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_political_india:
+  - text: "India is currently governed by the BJP with Narendra Modi as the Prime Minister."
+
+  utter_geography_india:
+  - text: "India's capital is New Delhi, and it comprises 28 states and 8 Union territories."
+
+  utter_state_information:
+  - text: "Please specify which state's information you need, such as population or chief minister."
+
+  utter_weather_india:
+  - text: "Please specify the city for current weather conditions."
+
+  utter_general_knowledge:
+  - text: "The national anthem 'Jana Gana Mana' was written by Rabindranath Tagore."
+
+
+actions:
+  - utter_political_india
+  - utter_geography_india
+  - utter_state_information
+  - utter_weather_india
+  - utter_general_knowledge
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
