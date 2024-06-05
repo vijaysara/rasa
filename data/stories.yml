@@ -44,10 +44,10 @@ stories:
   - intent: state_information
   - action: utter_state_information
 
-- story: weather query path
+- story: Provide Rajasthan district info
   steps:
-  - intent: weather_india
-  - action: utter_weather_india
+  - intent: ask_rajasthan_district
+  - action: utter_rajasthan_districts
 
 - story: general knowledge path
   steps:
