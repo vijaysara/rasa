@@ -109,11 +109,12 @@ nlu:
     - Which state in India has the highest literacy rate?
     - Who is the chief minister of Maharashtra?
 
-- intent: weather_india
+- intent: ask_rajasthan_district
   examples: |
-    - What is the weather like in Jodhpur today?
-    - Will it rain in Delhi tomorrow?
-    - What are the current weather conditions in Jaipur?
+    - Tell me about the districts in Rajasthan?
+    - What are the different districts in Rajasthan?
+    - Can you list the districts of Rajasthan?
+    - How many districts are there in Rajasthan?
 
 - intent: general_knowledge
   examples: |
