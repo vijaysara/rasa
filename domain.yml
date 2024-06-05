@@ -11,7 +11,7 @@ intents:
   - political_india
   - geography_india
   - state_information
-  - weather_india
+  - ask_rajasthan_district
   - general_knowledge
 
   
@@ -45,8 +45,8 @@ responses:
   utter_state_information:
   - text: "Please specify which state's information you need, such as population or chief minister."
 
-  utter_weather_india:
-  - text: "Please specify the city for current weather conditions."
+  utter_rajasthan_districts:
+  - text: "Rajasthan is divided into 33 districts, including Jaipur, Jodhpur, Udaipur, and Bikaner among others. Each district has its own unique culture and attractions."
 
   utter_general_knowledge:
   - text: "The national anthem 'Jana Gana Mana' was written by Rabindranath Tagore."
@@ -56,7 +56,7 @@ actions:
   - utter_political_india
   - utter_geography_india
   - utter_state_information
-  - utter_weather_india
+  - utter_rajasthan_districts
   - utter_general_knowledge
 
 session_config:
